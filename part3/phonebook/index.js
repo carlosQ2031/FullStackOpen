@@ -17,7 +17,7 @@ app.use(morgan(':method :url :status :res[content-length] - :response-time ms :b
 
 
 
-const PORT = 3001
+const PORT = 3001 || process.env.PORT
 
 
 let persons = [
