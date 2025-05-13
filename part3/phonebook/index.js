@@ -43,6 +43,10 @@ let persons = [
     }
 ]
 
+app.get('/', (req, res) => {
+  res.send('<h1>Hello World!</h1>')
+})
+
 //Devuelve todos los contactos
 app.get('/api/persons',(req,res)=>{
     res.json(persons)
